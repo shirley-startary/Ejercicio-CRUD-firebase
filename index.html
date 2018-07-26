@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CRUD TASK</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label>
+        <input id="new-task" type="text">
+        <button>Add</button>
+      </p>
+
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks">
+        <!-- <li>
+          <input type="checkbox">
+          <label>Quidditch Practice</label>
+          <input type="text">
+          <button class="edit">Edit &#9998;</button>
+          <button class="delete">Delete &#x1F5D1;</button>
+        </li>
+        <li class="editMode">
+          <input type="checkbox">
+          <label>Go Wand Shopping</label>
+          <input type="text" value="Go Wand Shopping">
+          <button class="edit">Save&#128190;</button>
+          <button class="delete">Delete &#x1F5D1;</button>
+        </li> -->
+
+      </ul>
+
+      <h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li>
+          <input type="checkbox" checked>
+          <label>Visit Hagrid</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/credentials.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
